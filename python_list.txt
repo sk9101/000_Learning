@@ -7,6 +7,34 @@ evalAsRamp()
 for i in range(10):
   print i
  
+
 #accessing a key value pair
 for key, val in dict.items():
   print(key, ": ", val)
+  
+  
+  
+#-----------HOUDINI SPECIFIC------------
+
+#connect a node to another
+node.setFirstInput(parentNode)
+
+
+#return selected nodes
+hou.selectedNodes()
+
+
+#display ui message
+hou.ui.displayMessage("Displaying a message", title = "Display Title")
+
+
+#return a list of primitive groups
+curNode = hou.selectedNodes()[0]
+primGroups = curNode.geometry().primGroups()
+
+for prim in primGroups:
+  print prim.name()
+
+
+#create a node as the last one in the chain
+curNode.createOutputNode('delete')
