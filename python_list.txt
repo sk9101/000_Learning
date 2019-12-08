@@ -3,7 +3,8 @@ Python
 evalAsParm()
 evalAsRamp()
 
-#loop a fixed number of times
+
+#loop for a fixed number of times
 for i in range(10):
   print i
  
