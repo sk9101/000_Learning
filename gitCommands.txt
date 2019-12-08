@@ -1,0 +1,6 @@
+git clone {https link to repo}
+
+//have to be on the folder
+git commit -a -m "a change"
+
+git push
