@@ -28,13 +28,24 @@ _set = set(_list)
 # init a tuple
 _tuple = (1, 2, 3)
 
-# init a dict
-_dict = {"key10": 10, "key1": 1, "key2": 2, "key4": 4}
-print('key3' in _dict) # False
-print(_dict.get('key2')) # prints 2
+# dictionary things
+_dict = {"k10": 10, "k1": 1, "k2": 2, "k4": 4}
+print('k3' in _dict) # False
+print(_dict.get('k2')) # prints 2
 _sortedkeys = sorted(_dict.keys())
 
+# iterating through a dict
+for key, value in _dict.items():
+    print(f"key is {key}, value is {value}")
 
+# list comprehensions
+names = ["Rick Sanchez", "Morty Smith", "Summer Smith", "Jerry Smith", "Beth Smith"]
+
+first_names = [name.split()[0] for name in names]
+
+# lambdas
+
+calc_mean = lambda num_list: sum(num_list)/len(num_list)
 
 # 
 # -- HOUDINI SPECIFIC --
