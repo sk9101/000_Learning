@@ -43,7 +43,7 @@ names = ["Rick Sanchez", "Morty Smith", "Summer Smith", "Jerry Smith", "Beth Smi
 
 first_names = [name.split()[0] for name in names]
 
-# lambdas
+# lambdas - can use in map
 
 calc_mean = lambda num_list: sum(num_list)/len(num_list)
 
